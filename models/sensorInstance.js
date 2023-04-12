@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
-const sensorInstanceSchema = new mongoose.schema({
+const sensorInstanceSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true
     },
-    data: {
+    humidity: {
+        type: String,
+        required: true
+    },
+    soilmoisture: {
         type: String,
         required: true
     },
