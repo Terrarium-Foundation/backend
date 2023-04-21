@@ -6,6 +6,7 @@ router.post("/savesensordata", async(req, res)=>{
     const sensorData = new sensorInstance({
         type: "sensor",
         humidity: req.body.humidity,
+        temperature: req.body.temperature,
         soilmoisture: req.body.soilmoisture
     })
     try{

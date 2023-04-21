@@ -9,6 +9,10 @@ const sensorInstanceSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    temperature: {
+        type: String,
+        required: true
+    },
     soilmoisture: {
         type: String,
         required: true
